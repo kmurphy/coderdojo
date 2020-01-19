@@ -40,26 +40,32 @@ This subset of worksheets were based around the <code>turtle</code> module. We u
  * [15-Cellular_Automation](15-Cellular_Automation/15-Cellular_Automation.pdf)</bf>
  This worksheet is much more advanced and uses cellular automation to simulate how fires spread in a forest.
 
-
-
 ## <code>pgzero</code>/<code>pygame</code> Worksheets
 
 In January 2020 we switched focus and:
 
  * Moved from <code>turtle</code> to
-  [Pygame Zero (pgzero)](https://pygame-zero.readthedocs.io/en/stable/). Pygame Zero is a layer on top of   
+  [Pygame Zero (pgzero)](https://pygame-zero.readthedocs.io/en/stable/) for graphics. Pygame Zero is a layer on top of   
 [pygame](https://www.pygame.org) and simplifies game development for new programmers.
  * Switched editor from [Thonny](https://thonny.org) to
  [Mu](https://codewith.mu). The Mu editor has a nicer interface and has some nice tools to identify and fix coding style issues (now if only it could fix my spelling ...). Recent versions of Thonny also support [pgzero](https://pygame-zero.readthedocs.io/en/stable/) so you can continue to use that if you wish.
 
-<div>
-In each of the following worksheets, the plan is to give the steps to build the basic game idea, and then give suggestions/outlines on how this game idea can be further developed into a proper game.
-Many of the game ideas from the excellent book <a href="https://www.dk.com/uk/book/9780241317792-computer-coding-python-games-for-kids/">Coding Games in Python (Computer Coding for Kids)</a>
 <a href="https://www.dk.com/uk/book/9780241317792-computer-coding-python-games-for-kids/"><img style="float: right;" src="resources/docs/coding_python_games_cover.jpg" width="100pt"/></a>
+In the following worksheets, the plan is to give the steps to build the basic game idea, and then give suggestions/outlines on how this game idea can be further developed into a proper game.
+Many of the game ideas from the excellent book <a href="https://www.dk.com/uk/book/9780241317792-computer-coding-python-games-for-kids/">Coding Games in Python (Computer Coding for Kids)</a> and from suggestions from the coders themselves.
 </div>
 
-* dfg
+* [Python tools and other software](20-Python_for_2020/20-Python_for_2020.tex)</br>
 
+* [Fruit Ninja games](21-fruit_ninga_games/21-fruit_ninga_games.pdf)
+  * Basic game idea
+  * Adding sound effects and background music
+  * Using physics to get moving targets
+  * Having lives to deal with missing the target
+  * Multiple fruit (and non-fruit) types
+* Collector games
+* Network games
+* Geometry Dash games
 
 ## Typesetting the worksheets
 
