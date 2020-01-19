@@ -1,0 +1,165 @@
+% arara: lualatex
+% !TEX TS-program = LuaLaTeX
+
+\documentclass{coderdojo}
+
+\worksheet{1}{Guess My Number}
+
+\begin{document}
+
+\maketitle
+
+\section*{Introduction}
+
+In this worksheet we will create a version of the {\em Guess my Number \/} game:
+\begin{exercise}[title=Guess my Number]
+
+\begin{itemize}
+\item
+The computer will generate a secret random number between 1 and 20 inclusive.
+\item
+We will have 5 attempts to guess the number.
+\item 
+After each guess the computer will tell us to go ``lower'' of ``higher'' with our next guess.
+\end{itemize}
+\end{exercise}
+
+This game is simple but when coding this in python we will cover a lot of important concepts in programming: 
+
+\begin{dingautolist}{192}
+
+\item \hyperref[sec:Store]{\color{section}\bfseries Storing information}
+
+We start with the storing of information (or data, as programmers like to call it).  When storing data there are two questions you need to ask yourself
+\begin{itemize}
+\item What type of information do i want to store?
+\item What is the information that I want to store?
+\end{itemize}
+\item \hyperref[sec:Output]{\color{section}\bfseries Outputting messages}
+
+There is no point in storing information if we can't output --- or print --- it out at a later point. We will use the \code{print} command for this.
+
+\item \hyperref[sec:Random]{\color{section}\bfseries Generating randomness}
+
+There are many situations in programming where we want some random behaviour. The python module \code{random} will help us with this task.
+
+\item \hyperref[sec:For]{\color{section}\bfseries Repeating, repeating, repeating \ldots\ commands}
+
+We want the computer to repeat some commands a number of times. We will use the \code{for} statement and \code{range} command for this.
+
+\item \hyperref[sec:If]{\color{section}\bfseries Making decisions}
+
+Finally, we need the computer to be able to make decisions and to execute different commands based on the outcome of that decision --- here we will use the \code{if} statements for this. 
+\end{dingautolist}
+
+With the above concepts covered we can build our game,  Then you can try the extensions / variations suggested.
+\clearpage
+
+
+
+
+\section{Storing information}\label{sec:Store}
+
+\begin{itemize}
+\item[\todoSymbol] \color{todo}
+Create a new file with the following contents and save as \code{Storing_Information.py}. 
+\end{itemize}
+
+\codeonly{title={\code{Storing_Information.py}}}{1}{20}{code}{Storing_Information.py}
+
+So what happened when we run this and why?
+
+\begin{itemize}
+\item[\pointSymbol]
+In line 1 we stored some data --- the number 5 --- in a variable (think box) called \code{x}.  Now for the rest of the program whenever we what to get the contents of the box \code{x} we just type the name of the box, \code{x}.
+
+\item[\pointSymbol]
+So in line 2, we wanted to output the information stored in \code{x} so we typed \code{print (x)}
+
+\item[\pointSymbol]
+In line 3, we multiplied the contents of \code{x} by \code{4} and outputted the result. Since \code{x} contained \code{5} the result was $5\times 4 = 20$.
+
+\item[\pointSymbol]
+In line 5, we stored new data into --- a string containing the character 5 --- in our variable 
+\code{x}.  There are two important things to note
+\begin{itemize}
+\item
+Storing new data into a box, replaces any existing data.
+\item
+A string is a sequence of characters (letters, digits, symbols, etc)  surrounded by quotes. 
+\end{itemize}
+
+\item[\pointSymbol]
+In line 6, we print out the contents of box \code{x} we get \code{"5"}. Hopefully, no surprises there.
+\item[\pointSymbol]
+In line 7, something weird happens, the multiplication by 4 did not result in 20. Instead we got \code{"5555"}. Why?
+\begin{itemize}
+\item.Python does different things depending on type type of data/information it has.  For example multiplying a number by 4 does the multiplication you learnt in school, but multiplying a string by by 4 repeats the string 4 times.
+\end{itemize}?
+ 
+\end{itemize}
+
+We save information/data using
+
+name of box = data to be saved
+
+\begin{itemize}
+\item
+storing numbers versus storing strings
+
+
+\section{Basic Game}
+
+This section only contains notes on items for discussion --- it need a lot of work before it can be used as standalone.
+
+
+\end{itemize}
+
+\subsection{Outputting messages}\label{sec:Output}
+
+\begin{itemize}
+\item
+print plain message
+\item print message with  placeholders
+\end{itemize}
+
+
+\subsection{Generating randomness}\label{sec:Random}
+
+\begin{itemize}
+\item
+importing modules
+\item
+\code{random.randint}
+\end{itemize}
+
+\subsection{Repeating, repeating, repeating \ldots\ commands}\label{sec:For}
+\subsection{Making decisions}\label{sec:If}
+
+\WeAreDone
+
+\clearpage
+
+\section{Extensions / Variations}
+
+OK, now that the basic game is finished, why not  try some extensions \ldots\
+
+\subsection{Wild card guesses}
+
+In this version of the game the computer generates {\bfseries two} random numbers at the start.
+\begin{itemize}
+\item the secret number, stored in \code{secret}
+\item a second integer in range 1 to 20, stored in \code{wildCard} 
+\end{itemize}
+
+Whenever the human player inputs the wild card guess, the computer is allowed pick a new random secret number without telling the human player.
+
+\subsection{Warmer or colder}
+
+Rather then replying with ``lower'' of ``higher'' , the computer could reply with ``colder'' or ``warmer''. The rules for this are 
+`\begin{itemize}
+\item Computer replies with ``colder'' if the current guess is further away from the secret number than the previous guess.
+\item Computer replies with ``warmer'' if the current guess is closer to the secret number than the previous guess.
+\end{itemize}
+
+\end{document}
