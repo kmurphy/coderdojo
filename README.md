@@ -50,7 +50,6 @@ In January 2020 we switched focus and:
  * Switched editor from [Thonny](https://thonny.org) to
  [Mu](https://codewith.mu). The Mu editor has a nicer interface and has some nice tools to identify and fix coding style issues (now if only it could fix my spelling ...). Recent versions of Thonny also support [pgzero](https://pygame-zero.readthedocs.io/en/stable/) so you can continue to use that if you wish.
 
-<img style="float: right;" src="resources/docs/coding_python_games_cover.jpg" width="100pt"/>
 In the following worksheets, the plan is to give the steps to build the basic game idea, and then give suggestions/outlines on how this game idea can be further developed into a proper game.
 Many of the game ideas from the excellent book <a href="https://www.dk.com/uk/book/9780241317792-computer-coding-python-games-for-kids/">Coding Games in Python (Computer Coding for Kids)</a> and from suggestions from the coders themselves.
 </div>
