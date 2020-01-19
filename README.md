@@ -5,7 +5,7 @@ This is a collection of worksheets covering programming in python.
 
 ## General Python and <code>turtle</code> Worksheets
 
-This subset of worksheets were based around the <code>turtle</code> module.
+This subset of worksheets were based around the <code>turtle</code> module. We used the python editor [Thonny](https://thonny.org) across OSX, Linux and windows.
 
  * [01-Guess_my_Number](01-Guess_my_Number/01-Guess_my_Number.pdf)</br>
  Simple guessing game to demo storing data, looping and making decisions. Very little code is given as worksheet was intended to be augmented with one-on-one instruction.
@@ -25,21 +25,39 @@ This subset of worksheets were based around the <code>turtle</code> module.
  * [06-Graphical_Take_Away_-_Second_Time_Lucky](06-Graphical_Take_Away_-_Second_Time_Lucky/06-Graphical_Take_Away_-_Second_Time_Lucky.pdf)</br>
  Finally we return to our Take Away game and implement a graphical version using <code>turtle</code> graphics.
 
- * [07-Monkey_Wars](07-Monkey_Wars/07-Monkey_Wars.pdf)
-
+ * [07-Monkey_Wars](07-Monkey_Wars/07-Monkey_Wars.pdf)</br>
  OK, we are ready for more complicated games. This time we will build our version of the classic Monkey Wars game.
 
  * [08-Working_with_Lists](08-Working_with_Lists/08-Working_with_Lists.pdf)</br>
- This worksheet is the first of our worksheets indented to cover various fundamental programming concepts. In this worksheet we will look at lists.
+ This is the first of our worksheets intended to cover various fundamental programming concepts. In this worksheet we will look at lists.
 
  * [11-Building_a_GUI](11-Building_a_GUI/11-Building_a_GUI.pdf)</br>
  In this worksheet we will develop a simple graphical interface which we can use to control our other python games and programs.
 
+ * [12-Happy_Holidays](12-Happy_Holidays/12-Happy_Holidays.pdf)</br>
+ We build some animated e-cards using the <code>turtle</code> module.
+
  * [15-Cellular_Automation](15-Cellular_Automation/15-Cellular_Automation.pdf)</bf>
  This worksheet is much more advanced and uses cellular automation to simulate how fires spread in a forest.
 
- * [16-Christmass_Trees](16-Christmass_Trees/16-Christmass_Trees.pdf)</br>
- We build some animated e-cards using the <code>turtle</code> module.
+
 
 ## <code>pgzero</code>/<code>pygame</code> Worksheets
-Written in LaTeX, typeset using luaLaTeX due to extra fonts.
+
+In January 2020 we switched focus and:
+
+ * Moved from <code>turtle</code> to
+  [Pygame Zero (pgzero)](https://pygame-zero.readthedocs.io/en/stable/). Pygame Zero is a layer on top of   
+[pygame](https://www.pygame.org) and simplifies game development for new programmers.
+ * Switched editor from [Thonny](https://thonny.org) to
+ [Mu](https://codewith.mu). The Mu editor has a nicer interface and has some nice tools to identify and fix coding style issues (now if only it could fix my spelling ...). Recent versions of Thonny also support [pgzero](https://pygame-zero.readthedocs.io/en/stable/) so you can continue to use that if you wish.
+
+<div>
+In each of the following worksheets, the plan is to give the steps to build the basic game idea, and then give suggestions/outlines on how this game idea can be further developed into a proper game.
+Many of the game ideas from the excellent book <a ref="https://www.dk.com/uk/book/9780241317792-computer-coding-python-games-for-kids/">Coding Games in Python (Computer Coding for Kids)</a>
+<a ref="https://www.dk.com/uk/book/9780241317792-computer-coding-python-games-for-kids/"><img style="float: right;" src="resources/docs/coding_python_games_cover.jpg" width="100pt" /></a>
+</div>
+
+## Typesetting the worksheets
+
+The worksheets are written in LaTeX, typeset using luaLaTeX due to extra fonts, using the document class [coderdojo.cls](latex/coderdojo.cls).
