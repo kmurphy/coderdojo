@@ -54,9 +54,12 @@ In January 2020 we switched focus and:
 
 <div>
 In each of the following worksheets, the plan is to give the steps to build the basic game idea, and then give suggestions/outlines on how this game idea can be further developed into a proper game.
-Many of the game ideas from the excellent book <a ref="https://www.dk.com/uk/book/9780241317792-computer-coding-python-games-for-kids/">Coding Games in Python (Computer Coding for Kids)</a>
-<a ref="https://www.dk.com/uk/book/9780241317792-computer-coding-python-games-for-kids/"><img style="float: right;" src="resources/docs/coding_python_games_cover.jpg" width="100pt" /></a>
+Many of the game ideas from the excellent book <a href="https://www.dk.com/uk/book/9780241317792-computer-coding-python-games-for-kids/">Coding Games in Python (Computer Coding for Kids)</a>
+<a href="https://www.dk.com/uk/book/9780241317792-computer-coding-python-games-for-kids/"><img style="float: right; width:100pt" src="resources/docs/coding_python_games_cover.jpg" /></a>
 </div>
+
+* dfg
+
 
 ## Typesetting the worksheets
 
