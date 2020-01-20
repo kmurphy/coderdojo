@@ -61,9 +61,16 @@ Many of the game ideas from the excellent book <a href="https://www.dk.com/uk/bo
   * Adding sound effects and background music
   * Using physics to get moving targets
   * Having lives to deal with missing the target
-  * Multiple fruit (and non-fruit) types
-* Collector games
+  * Multiple fruit (and non-fruit) targets
+* [Collector games](22-collector_games/22-collector_games.pdf)
+  * Basic game idea
+  * Adding sound effects and background music
+  * Multiple levels with increasing difficulty
+  * Different and vanishing targets 
+  
 * Network games
+  * Basic game idea
+  
 * Geometry Dash games
 
 ## Typesetting the worksheets
