@@ -37,7 +37,7 @@ This subset of worksheets were based around the <code>turtle</code> module. We u
  * [12-Happy_Holidays](12-Happy_Holidays/12-Happy_Holidays.pdf)</br>
  We build some animated e-cards using the <code>turtle</code> module.
 
- * [15-Cellular_Automation](15-Cellular_Automation/15-Cellular_Automation.pdf)</bf>
+ * [15-Cellular_Automation](15-Cellular_Automation/15-Cellular_Automation.pdf)</br>
  This worksheet is much more advanced and uses cellular automation to simulate how fires spread in a forest.
 
 ## <code>pgzero</code>/<code>pygame</code> Worksheets
