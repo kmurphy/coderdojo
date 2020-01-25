@@ -54,7 +54,7 @@ In the following worksheets, the plan is to give the steps to build the basic ga
 Many of the game ideas from the excellent book <a href="https://www.dk.com/uk/book/9780241317792-computer-coding-python-games-for-kids/">Coding Games in Python (Computer Coding for Kids)</a> and from suggestions from the coders themselves.
 </div>
 
-* [Python tools and other software](20-Python_for_2020/20-Python_for_2020.tex)</br>
+* [Python tools and other software](20-Python_for_2020/20-Python_for_2020.pdf)</br>
 
 * [Fruit Ninja games](21-fruit_ninga_games/21-fruit_ninga_games.pdf)
   * Basic game idea
