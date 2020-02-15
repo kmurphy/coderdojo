@@ -5,7 +5,7 @@
 \usepackage[lf,sfdefault]{gandhi}
 
 \def\SRC{../resources/docs/Coding_Games_in_Python__DK__2018.pdf}
-\def\MUcode{../code/fruit_ninja_games/}
+\def\MUcode{/Users/kmurphy/mu_code/coderdojo_tramore/fruit_ninja_games/}
 
 \newfontfamily{\pygameZeroFont}{Marker Felt}
 \def\pygameZero{{\pygameZeroFont Pygame Zero}}
@@ -18,7 +18,7 @@ decorate, drop shadow,
 decoration={random steps,segment length=3pt,amplitude=1pt},
 text width=4cm, font=\scriptsize]
 
-\worksheet{21}{Fruit Ninja Games}
+\worksheet{21}{Fruit Ninja Games --- Code}
 
 \newcommand\contentsitem[2]{
 	\item \hyperref[#1]{\color{section}\bfseries #2}
@@ -47,27 +47,41 @@ text width=4cm, font=\scriptsize]
 \begin{document}
 \maketitle
 
-\section*{Introduction}
-
-We are going to build a few versions of the fruit ninja game. We will start with an easy version where every step (line of code) is given to you, but as you progress you will need to figure out more and more details yourself. At each stage you should make sure you understand what is happening, and if not then please ask.
-
 \begin{dingautolist}{192} 
 \contentsitem{ball}{Basic fruit ninja game}\\
 Our starting version of the game consists of an apple that appears at random positions on the screen and the computer prints out  "Good shot!" and draws a new apple when you click on the apple, otherwise prints "You missed!" and ends the game.
- 
-The steps given here come from the excellent \href{https://www.dk.com/uk/book/9780241317792-computer-coding-python-games-for-kids/}{\em Coding Games with Python} book.
+
+\codeonly{title={fruit\_ninja\_basic}}
+	{1}{100}{\MUcode}{fruit_niinja_basic.py}  
+	
+\clearpage
 
 \contentsitem{review}{Code review}
 
 The {\em Coding Games with Python} is very good, but it does do a few things that we can improve on. So before we move on we are going to look at our code and see if we can improve it.
 
+\codeonly{title={fruit\_ninja\_refactored}}
+	{1}{100}{\MUcode}{fruit_niinja_refactored.py}  
+	
+\clearpage
+
 \contentsitem{rectangle}{Adding sounds}
 
 One of the reasons we switched over from turtle graphics to \pygameZero\ is to simplify generating sounds --- both short terms sound effects and long term background music. 
 
+\codeonly{title={fruit\_ninja\_sounds}}
+	{1}{100}{\MUcode}{fruit_niinja_sounds.py}  
+	
+\clearpage
+
 \contentsitem{rectangle}{Keeping score}
 
 Currently the game just prints out a different message whenever you miss or hit a fruit. It would be nicer to keep score so that you can show off your shooting skills.  To do this we will create a new variable called \code{score}.  Also we will add a heads up display (HUD) to show the score and game title.    
+
+\codeonly{title={fruit\_ninja\_score}}
+	{1}{100}{\MUcode}{fruit_niinja_score.py}  
+	
+\clearpage
 
 \contentsitem{rectangle}{Moving targets}
 
@@ -75,10 +89,30 @@ Hitting a stationary object is easy \ldots\ what happens if they are moving?
 
 So we are going to change our fixed position fruit to fruit that is thrown upwards from below the screen and then fall back down due to gravity --- now we will need some physics!
 
+\codeonly{title={fruit\_ninja\_physics}}
+	{1}{37}{\MUcode}{fruit_niinja_physics.py}  
+
+\codeonly{title={fruit\_ninja\_physics}}
+	{38}{100}{\MUcode}{fruit_niinja_physics.py}  
+	
+
+\clearpage
+	
 \contentsitem{rectangle}{Varying targets} 
 
 We don't just want apples! Lets add other fruit also, after all this is `fruit ninja' not `apple ninja'.
+
+\codeonly{title={fruit\_ninja\_final}}
+	{1}{46}{\MUcode}{fruit_niinja_final.py}  
+	
+\codeonly{title={fruit\_ninja\_final}}
+	{47}{100}{\MUcode}{fruit_niinja_final.py}  
+	
+\clearpage
+
 \end{dingautolist}
+
+\end{document}
 
 \clearpage
 
@@ -306,7 +340,7 @@ To play background music you:
 \begin{itemize}
 \item \parbox[t]{11cm}{Find a suitable sound track.  I like the website
 \href{https://www.melodyloops.com/music/}{www.melodyloops.com}. It has a good selection of tracks and it has a nice feature of cutting the tracks to whatever length you want and control fade in at the start and fade out at the end of the tracks. }
-\hfill\raisebox{-32pt}[0pt][0pt]{\href{https://www.melodyloops.com/music/}{{\includegraphics[height=20pt]{melodyloops}}}}
+\hfill\raisebox{-32pt}[0pt][0pt]{\href{https://www.melodyloops.com/music/}{www.melodyloops.com}{\includegraphics[height=20pt]{melodyloops}}}
 
  \vspace{6pt}
 {\em\smaller For example, for this game I picked The French Lovers Song and set its length to be 90 seconds  with a few second fade out at the end. }

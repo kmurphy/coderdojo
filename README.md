@@ -73,6 +73,16 @@ Many of the game ideas from the excellent book <a href="https://www.dk.com/uk/bo
   
 * Geometry Dash games
 
+## Other (external) resources
+
+ * The YouTube channel [KidsCanCode](https://www.youtube.com/channel/UCNaPQ5uLX5iIEHUCLmfAgKg) is excellent, and has separate series of tutorials for:
+ 	* [Learning to Code in Python](https://www.youtube.com/playlist?list=PLsk-HSGFjnaGe7sS_4VpZoEtZF2VoWtoR) which uses turtle graphics.
+	* [Game Development with PyGame](https://www.youtube.com/playlist?list=PLsk-HSGFjnaH5yghzu7PcOzm9NhsW0Urw) 
+	covers writing game using the PyGame library. Hopefully we will implement their game using pgzero library instead. 
+ * Some pgzero games that we will probably use are
+ 	* [Creating you First Racing Game](https://www.instructables.com/id/Create-Your-First-Racing-Game/)
+ 
+
 ## Typesetting the worksheets
 
 The worksheets are written in LaTeX, typeset using luaLaTeX due to extra fonts, using the document class [coderdojo.cls](latex/coderdojo.cls).

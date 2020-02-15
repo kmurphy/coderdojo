@@ -1,9 +1,11 @@
-TARGET := $(notdir $(PWD))
+MAIN := $(notdir $(PWD))
+CODE := $(MAIN)_code
 
-default: $(TARGET).pdf
+default: $(MAIN).pdf $(MAIN)_code.pdf
 
-$(TARGET).pdf: $(TARGET).tex
+$(MAIN).pdf: $(MAIN).tex
 	lualatex $<
-
-
 	
+code: $(MAIN)_code.pdf
+$(MAIN)_code.pdf: $(MAIN)_code.tex
+	lualatex $<
