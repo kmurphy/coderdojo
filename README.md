@@ -68,8 +68,11 @@ Many of the game ideas from the excellent book <a href="https://www.dk.com/uk/bo
   * Multiple levels with increasing difficulty
   * Different and vanishing targets 
   
-* Network games
+* [Network games](23-network_games/23-network_games.pdf)
   * Basic game idea
+  * Adding lives, game title, and sound as per earlier games
+  * Multiple level games
+  * Variations of basic game idea to try to reach a given total
   
 * Geometry Dash games
 
