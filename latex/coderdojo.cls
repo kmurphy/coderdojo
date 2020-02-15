@@ -9,7 +9,7 @@
 
 \LoadClass[12pt]{article}
 
-%@ page setup
+%: page setup
 
 \usepackage[
     type={CC},
@@ -39,7 +39,7 @@
 \xpretocmd\headrule{\color{section}}{}{\PatchFailed}
 \parindent 0pt
 
-%@ graphics 
+%: graphics 
 
 \usepackage[svgnames]{xcolor}
 \usepackage{graphicx}
@@ -49,7 +49,7 @@
 \usetikzlibrary{decorations}
 \usetikzlibrary{shapes.symbols, shadows}
 
-%@ colours
+%: colours
 
 \definecolor{deepblue}{rgb}{0,0,0.5}
 \definecolor{deepred}{rgb}{0.6,0,0}
@@ -62,7 +62,7 @@
 \definecolor{todo}{rgb}{0,0,0.4}
 \definecolor{comment}{rgb}{0.2,0,0.2}
 
-%@ fonts
+%: fonts
 
 \usepackage{relsize}
 \usepackage{amsmath}
