@@ -95,7 +95,7 @@
 \newcommand{\commentSymbol}{{\textcolor{comment}{\larger[1]\faCommentingO}}}
 
 %@ boxes
-\usepackage[listings]{tcolorbox}
+\usepackage[listings,breakable]{tcolorbox}
 \tcbuselibrary{most}
 
 \newtcolorbox{boxTitle}{enhanced,
@@ -178,13 +178,13 @@ boxed title style={frame code={
     {\sffamily\bfseries\color{section}}}
         
     
-% code
+%: code
 \DeclareFixedFont{\ttb}{T1}{txtt}{bx}{n}{12} % for bold
 \DeclareFixedFont{\ttm}{T1}{txtt}{m}{n}{12}  % for normal
 
 \usepackage{wit-code-2012}
 
-% Python style for highlighting
+%: Python style for highlighting
 \newcommand\pythonstyle{\lstset{
 language=Python,
 basicstyle=\ttm,
@@ -203,16 +203,16 @@ showstringspaces=false            %
 }
 {}
 
-% Python for external files
+%: Python for external files
 \newcommand\pythonexternal[2][]{{
 \pythonstyle
 \lstinputlisting[#1]{#2}}}
 
-% Python for inline
+%: Python for inline
 \renewcommand\code[1]{{\pythonstyle\lstinline!#1!}}
 
 \newtcbinputlisting{\codeonly}[5]{
-    enhanced,
+    enhanced, breakable,
     listing file={#4/#5},
     listing only,
     width=1\linewidth,

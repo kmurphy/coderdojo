@@ -54,37 +54,37 @@ In the following worksheets, the plan is to give the steps to build the basic ga
 Many of the game ideas from the excellent book <a href="https://www.dk.com/uk/book/9780241317792-computer-coding-python-games-for-kids/">Coding Games in Python (Computer Coding for Kids)</a> and from suggestions from the coders themselves.
 </div>
 
-* [Python tools and other software](20-Python_for_2020/20-Python_for_2020.pdf)</br>
+* [20 - Python tools and other software](20-Python_for_2020/20-Python_for_2020.pdf)</br>
 
-* [Fruit Ninja games](21-fruit_ninga_games/21-fruit_ninga_games.pdf)
+* [21 - Fruit Ninja games](21-fruit_ninga_games/21-fruit_ninga_games.pdf)&nbsp;&nbsp;&nbsp;([Code](21-fruit_ninga_games/21-fruit_ninga_games_-_Code.pdf))
   * Basic game idea
   * Adding sound effects and background music
   * Using physics to get moving targets
   * Having lives to deal with missing the target
   * Multiple fruit (and non-fruit) targets
-* [Collector games](22-collector_games/22-collector_games.pdf)
+* [22 - Collector games](22-collector_games/22-collector_games.pdf)&nbsp;&nbsp;&nbsp;([Code](22-collector_games/22-collector_games_-_Code.pdf))
   * Basic game idea
   * Adding sound effects and background music
   * Multiple levels with increasing difficulty
-  * Different and vanishing targets 
-  
-* [Network games](23-network_games/23-network_games.pdf)
+  * Different and vanishing targets
+
+* [23 - Network games](23-network_games/23-network_games.pdf)
   * Basic game idea
   * Adding lives, game title, and sound as per earlier games
   * Multiple level games
   * Variations of basic game idea to try to reach a given total
-  
+
 * Geometry Dash games
 
 ## Other (external) resources
 
  * The YouTube channel [KidsCanCode](https://www.youtube.com/channel/UCNaPQ5uLX5iIEHUCLmfAgKg) is excellent, and has separate series of tutorials for:
  	* [Learning to Code in Python](https://www.youtube.com/playlist?list=PLsk-HSGFjnaGe7sS_4VpZoEtZF2VoWtoR) which uses turtle graphics.
-	* [Game Development with PyGame](https://www.youtube.com/playlist?list=PLsk-HSGFjnaH5yghzu7PcOzm9NhsW0Urw) 
-	covers writing game using the PyGame library. Hopefully we will implement their game using pgzero library instead. 
+	* [Game Development with PyGame](https://www.youtube.com/playlist?list=PLsk-HSGFjnaH5yghzu7PcOzm9NhsW0Urw)
+	covers writing game using the PyGame library. Hopefully we will implement their game using pgzero library instead.
  * Some pgzero games that we will probably use are
  	* [Creating you First Racing Game](https://www.instructables.com/id/Create-Your-First-Racing-Game/)
- 
+
 
 ## Typesetting the worksheets
 

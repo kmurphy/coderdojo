@@ -1,0 +1,195 @@
+% !TEX TS-program = LuaLaTeX
+
+\documentclass{coderdojo}
+
+\usepackage[lf,sfdefault]{gandhi}
+
+\def\SRC{../resources/docs/Coding_Games_in_Python__DK__2018.pdf}
+\def\MUcode{/Users/kmurphy/mu_code/coderdojo_tramore/fruit_ninja_games/}
+
+\newfontfamily{\pygameZeroFont}{Marker Felt}
+\def\pygameZero{{\pygameZeroFont Pygame Zero}}
+
+\usepackage{pdflscape}
+
+\usetikzlibrary{decorations,decorations.pathreplacing,decorations.pathmorphing}
+\tikzstyle{postit}=[fill=yellow!50,draw,thick,
+decorate, drop shadow,
+decoration={random steps,segment length=3pt,amplitude=1pt},
+text width=4cm, font=\scriptsize]
+
+\worksheet{21}{Fruit Ninja Games --- Code}
+
+\newcommand\contentsitem[2]{
+	\item \hyperref[#1]{\color{section}\bfseries #2}
+}
+
+\usepackage{wrapfig}
+\usepackage{float}
+
+\newcommand\TODO[1]{
+\begin{itemize}
+\item[\todoSymbol] \color{todo} #1
+\end{itemize}}
+
+
+\newcommand\TEST[1][\bf Test your code!]{
+	\centerline{\tikz\node[starburst, fill=yellow, draw=red, line width=2pt,align=center] {#1};}
+}
+
+\newcommand\TESTSMALL[2][\bf Test your code!]{
+{\tikz[scale=#2]\node[starburst, fill=yellow, draw=red, line width=2pt,align=center] {#1};}
+}
+
+\usetikzlibrary{decorations.pathreplacing}
+
+%: DOCUMENT
+\begin{document}
+\maketitle
+
+\begin{dingautolist}{192} 
+
+
+%: fruit_niinja_basic.py
+\contentsitem{ball}{Basic fruit ninja game}\\
+Our starting version of the game consists of an apple that appears at random positions on the screen and the computer prints out  "Good shot!" and draws a new apple when you click on the apple, otherwise prints "You missed!" and ends the game.
+
+\codeonly{title={fruit\_ninja\_basic}}
+	{1}{100}{\MUcode}{fruit_niinja_basic.py}  
+
+{\bf Things to check and to talk to coders about:}
+\begin{itemize}
+\item Programs saved in the folder \code{coderdojo_tramore/fruilt_ninja_games}.
+\item Difference between defining a function and calling a function.
+\item Outline of life-cycle of a pgzero program.
+\end{itemize}
+\clearpage
+
+%: fruit_niinja_refactored.py
+\contentsitem{review}{Code review}
+
+The {\em Coding Games with Python} is very good, but it does do a few things that we can improve on. So before we move on we are going to look at our code and see if we can improve it.
+
+\codeonly{title={fruit\_ninja\_refactored}}
+	{1}{100}{\MUcode}{fruit_niinja_refactored.py}  
+
+{\bf Things to check and to talk to coders about:}
+\begin{itemize}
+\item Coders create a new file (and keep old for reference later) using naming convention given.
+\item Why do we refactor code? 
+\item What happens now if we change the screen height? width? what happens in out previous program? concept of "Magic Numbers".
+\item Why do we care about names of our identifiers?
+\end{itemize}
+
+\clearpage
+
+%: fruit_niinja_sounds.py
+\contentsitem{rectangle}{Adding sounds}
+
+\enlargethispage{40pt}
+One of the reasons we switched over from turtle graphics to \pygameZero\ is to simplify generating sounds --- both short terms sound effects and long term background music. 
+
+\codeonly{title={fruit\_ninja\_sounds}}
+	{1}{100}{\MUcode}{fruit_niinja_sounds.py}  
+
+{\bf Things to check and to talk to coders about:}
+
+\begin{itemize}
+\item The worksheet covers the steps used to find, download and convert the sound effects and the background music --- this is so coders can pick their own games assets later.  In the short term, all of the required game assets are in the correct folders already or can be found in the \code{resources} folders.
+\item 
+Line 21 is an example of common programming task --- we want something to occur randomly at a specified rate. Here we want the cheer to happens every 10 times on average. What happens when the 10 parameter is lowered down to 2, or even 1? What happens if it is increased? 
+\item
+Some coders found it difficult to know where to put the code --- indicating lack of understanding of the program structure. Not sure if this would occur anyway or implies a rewrite of the worksheet.
+\end{itemize}
+
+\clearpage
+
+%: fruit_niinja_score.py
+\enlargethispage{40pt}
+\vspace*{-30pt}
+\contentsitem{rectangle}{Keeping score}
+
+Currently the game just prints out a different message whenever you miss or hit a fruit. It would be nicer to keep score so that you can show off your shooting skills.  To do this we will create a new variable called \code{score}.  Also we will add a heads up display (HUD) to show the score and game title.    
+
+\vspace{-12pt}
+\codeonly{title={fruit\_ninja\_score}}
+	{1}{100}{\MUcode}{fruit_niinja_score.py}  
+
+{\bf Things to check and to talk to coders about:}
+
+\begin{itemize}
+\item
+Big concept here is the placement of text boxes within the screen, in particular the use of different anchor points.
+\item 
+Stored \code{score} in object \code{fruit} so don't have to worry about \code{global}. The concept of scope and \code{global} keyword  will be introduced in next game.
+\end{itemize}
+	
+\clearpage
+
+%: fruit_niinja_physics.py
+\enlargethispage{40pt}
+\contentsitem{rectangle}{Moving targets}
+
+Hitting a stationary object is easy \ldots\ what happens if they are moving?
+
+So we are going to change our fixed position fruit to fruit that is thrown upwards from below the screen and then fall back down due to gravity --- now we will need some physics!
+
+\codeonly{title={fruit\_ninja\_final}}
+	{1}{38}{\MUcode}{fruit_niinja_physics.py}  
+
+{\bf Things to check and to talk to coders about:}
+
+\begin{itemize}
+\item
+This is quite a complex concept --- so new coders could skip it. On the other hand, it is a nice effect and the general pattern will be used many many times --- so try and see how far can they go.
+%\item
+%Think of a \code{Vector} as an ordered pair of information --- like (firstname,surname) --- order is important.
+\item
+Line 30 ensures that the fruit will be thrown towards the centre of the screen --- so user has a chance of hitting it.
+\item
+We often use ``d'' as a prefix if we are talking about a small change.
+% \item 
+%Note that acceleration never changes  
+\end{itemize}
+
+\codeonly{title={fruit\_ninja\_final}}
+	{39}{100}{\MUcode}{fruit_niinja_physics.py}  
+
+
+{\bf Things to check and to talk to coders about:}
+
+\begin{itemize}
+\item
+Using \code{Vector} allows us to group pairs of operations (the horizontal and the vertical) together.
+Think of a \code{Vector} as an ordered pair of information --- like (firstname,surname) --- order is important.
+\item 
+Note that acceleration never changes, only velocity is updated due to acceleration, and position is updated due to velocity.
+\item
+To get physics working in an simulation (from this simple one all the way up to ForteNite) we:
+\begin{itemize}
+\item Setup object with initial position, velocity and acceleration\hfill (do this once).
+\item As fast as possible we repeatedly call and \code{update} to move everything slightly and a \code{draw} to redraw the screen.
+\end{itemize}
+\end{itemize}
+\clearpage
+	
+\contentsitem{rectangle}{Varying targets} 
+
+We don't just want apples! Lets add other fruit also, after all this is `fruit ninja' not `apple ninja'.
+
+\codeonly{title={fruit\_ninja\_final}}
+	{1}{100}{\MUcode}{fruit_niinja_final.py}  
+	
+{\bf Things to check and to talk to coders about:}
+
+\begin{itemize}
+\item
+This implementation has both varying fruit and also non-fruits.  Better to get coders to do just the varying fruits first. 
+\item
+See \code{resources} folder for game assets.
+\end{itemize}
+\clearpage
+
+\end{dingautolist}
+
+\end{document}
